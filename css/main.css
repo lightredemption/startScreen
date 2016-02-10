@@ -19,7 +19,6 @@ body {
 
 .item {
   height: 8em;
-  top: -20%;
 }
 
 img {
@@ -39,4 +38,8 @@ iframe {
   border: none !important;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.content {
+  font-family: Verdana;
 }
