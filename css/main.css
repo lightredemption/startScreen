@@ -1,7 +1,13 @@
-.container {
-  background-color: black;
+body {
+  background-color: #000000;
 }
 
-.block {
-  background-color: white;
+.container {
+}
+
+.main-block {
+  background-color: #ffffff;
+  height: 10em;
+  margin-top: 3em;
+
 }
