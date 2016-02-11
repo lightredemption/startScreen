@@ -11,7 +11,7 @@ body {
   font-family: Arual, serif;
   width: 100%;
   padding-top: 5%;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
@@ -22,6 +22,7 @@ body {
   color: #ffffff;
   margin-top: 1em;
   font-size: 1.5em;
+  font-style: italic;
 }
 
 .container {
@@ -33,7 +34,7 @@ body {
   margin-right: 20%;
   width: 60%;
   height: 27em;
-  margin-top: 8%;
+  margin-top: 13%;
   display: inline-flex;
 }
 
@@ -47,13 +48,7 @@ body {
   margin-left: 1em;
 }
 
-.sfw-content {
-  font-family: Courier, serif;
-  padding-left: 2em;
-}
-
-.nsfw-content {
-  font-family: Courier, serif;
+.content {
   padding-left: 2em;
 }
 
