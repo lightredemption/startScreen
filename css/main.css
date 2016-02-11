@@ -21,7 +21,6 @@ body {
   width: 100%;
   color: #ffffff;
   margin-top: 1em;
-  font-style: italic;
   font-size: 1.5em;
 }
 
@@ -40,12 +39,11 @@ body {
 
 .left-block {
   height: 27em;
-  width: 60%;
+  width: 70%;
 }
 
 .right-block {
-  height: 30em;
-  width: 35%;
+  height: 27em;
   margin-left: 1em;
 }
 
