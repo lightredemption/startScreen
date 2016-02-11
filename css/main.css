@@ -29,6 +29,11 @@ body {
   width: auto;
 }
 
+.modal-content {
+  border: none;
+  border-radius: 0px;
+}
+
 .contain {
   margin-left: 20%;
   margin-right: 20%;

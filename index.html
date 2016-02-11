@@ -3,6 +3,7 @@
 
 <head>
   <title>Bonjour</title>
+  <link rel="icon" type="image/png" href="images/favico.png">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw=="
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
@@ -38,7 +39,24 @@
         </div>
 
       </div>
-      <div class="liner"><span id="timer"></span><i class="fa fa-lock pull-right" id="lock"></i><i class="fa fa-unlock hidden pull-right" id="unlock"></i><a href="https://m.uc.edu/webapps/mobiletimeclock/default.aspx"><i class="fa fa-clock-o pull-right"></i></a></div>
+      <div class="liner"><span id="timer"></span><i class="fa fa-lock pull-right" id="lock"></i><i class="fa fa-unlock hidden pull-right" id="unlock"></i><a href="https://m.uc.edu/webapps/mobiletimeclock/default.aspx"><i class="fa fa-clock-o pull-right"></i></a><i data-toggle="modal"
+          data-target="#modal" class="fa fa-exclamation-circle pull-right"></i>
+      </div>
+
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Acknowledgements</h4>
+            </div>
+            <div class="modal-body">
+              <div>FavIcon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="main-block">
 
@@ -169,6 +187,7 @@
   <div class="text-center quote" id="quote">
     "Die hard, live harder"
   </div>
+
 
 </body>
 
