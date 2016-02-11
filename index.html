@@ -6,6 +6,8 @@
   <title>Welcome Home</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw=="
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
@@ -13,38 +15,156 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-1 columner">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <div class="contain">
+    <div class="left-block">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="https://i.imgur.com/YIKDEye.jpg" alt="1st">
-            </div>
-
-            <div class="item">
-              <img src="https://i.imgur.com/atWzDOT.jpg" alt="2nd">
-            </div>
-
-            <div class="item">
-              <img src="https://i.imgur.com/N3ecyNH.jpg" alt="3rd">
-            </div>
-
-            <div class="item">
-              <img src="https://i.imgur.com/hah4b0J.jpg" alt="4th">
-            </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="https://i.imgur.com/YIKDEye.jpg" alt="1st">
           </div>
 
+          <div class="item">
+            <img src="https://i.imgur.com/atWzDOT.jpg" alt="2nd">
+          </div>
+
+          <div class="item">
+            <img src="https://i.imgur.com/N3ecyNH.jpg" alt="3rd">
+          </div>
+
+          <div class="item">
+            <img src="https://i.imgur.com/hah4b0J.jpg" alt="4th">
+          </div>
         </div>
 
-        <div class="main-block">
-          <h3></h3>
+      </div>
+      <div class="liner"><span id="timer"></span><i class="fa fa-lock pull-right" id="lock"></i><i class="fa fa-unlock hidden pull-right" id="unlock"></i><a href="https://m.uc.edu/webapps/mobiletimeclock/default.aspx"><i class="fa fa-clock-o pull-right"></i></a></div>
+
+      <div class="main-block">
+
+        <div id="title" class="text-center">Welcome</div>
+
+        <div class="sfw-content container" id="sfw">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="https://twitter.com/">Twit</a>
+              <br/>
+              <a href="https://www.facebook.com/">Facebook</a>
+              <br/>
+              <a href="https://www.reddit.com">Leddit</a>
+              <br/>
+              <a href="https://www.youtube.com/feed/subscriptions">Tubes</a>
+              <br/>
+            </div>
+            <div class="col-sm-3">
+              <a href="http://www.amazon.com/">Amazon</a>
+              <br/>
+              <a href="http://www.ebay.com/">Ebay</a>
+              <br/>
+              <a href="https://outlook.live.com/owa/?id=64855">Hotmail</a>
+              <br/>
+              <a href="https://mail.google.com/mail/u/0/">Trash</a>
+              <br/>
+            </div>
+            <div class="col-sm-3">
+              <a href="https://lightredemption.wordpress.com/">Blog</a>
+              <br/>
+              <a href="http://www.twitch.tv/">Twitch</a>
+              <br/>
+              <a href="http://tnbtu.lrhale.com/">Vampire</a>
+              <br/>
+              <a href="http://www.twogag.com/">2GAG</a>
+              <br/>
+              <a href="http://www.idoloncomic.com/">IO</a>
+              <br/>
+            </div>
+            <div class="col-sm-3">
+              <a href="http://warframe.wikia.com/wiki/Orokin_Void/ByMissions">Void</a>
+              <br/>
+              <a href="https://deathsnacks.com/wf/index.html">Snacks</a>
+              <br/>
+              <a href="https://www.fanfiction.net/~lightredemption">FanFic</a>
+              <br/>
+              <a href="http://www.bodybuilding.com/fun/wotw112.htm">Lift</a>
+              <br/>
+              <a href="http://www.last.fm/user/CynthiaCrescent">FM</a>
+              <br/>
+            </div>
+          </div>
+        </div>
+        <div class="nsfw-content container hidden" id="nsfw">
+          <div class="row">
+            <div class="col-sm-2">
+              <a href="https://twitter.com/">Twit</a>
+              <br/>
+              <a href="https://www.facebook.com/">Facebook</a>
+              <br/>
+              <a href="https://www.reddit.com">Leddit</a>
+              <br/>
+              <a href="https://www.youtube.com/feed/subscriptions">Tubes</a>
+              <br/>
+            </div>
+            <div class="col-sm-2">
+              <a href="http://www.amazon.com/">Amazon</a>
+              <br/>
+              <a href="http://www.ebay.com/">Ebay</a>
+              <br/>
+              <a href="https://outlook.live.com/owa/?id=64855">Hotmail</a>
+              <br/>
+              <a href="https://mail.google.com/mail/u/0/">Trash</a>
+              <br/>
+            </div>
+            <div class="col-sm-2">
+              <a href="https://lightredemption.wordpress.com/">Blog</a>
+              <br/>
+              <a href="http://www.twitch.tv/">Twitch</a>
+              <br/>
+              <a href="http://tnbtu.lrhale.com/">Vampire</a>
+              <br/>
+              <a href="http://www.twogag.com/">2GAG</a>
+              <br/>
+              <a href="http://www.idoloncomic.com/">IO</a>
+              <br/>
+            </div>
+            <div class="col-sm-2">
+              <a href="http://warframe.wikia.com/wiki/Orokin_Void/ByMissions">Void</a>
+              <br/>
+              <a href="https://deathsnacks.com/wf/index.html">Snacks</a>
+              <br/>
+              <a href="https://www.fanfiction.net/~lightredemption">FanFic</a>
+              <br/>
+              <a href="http://www.bodybuilding.com/fun/wotw112.htm">Bod</a>
+              <br/>
+              <a href="http://www.last.fm/user/CynthiaCrescent">FM</a>
+              <br/>
+            </div>
+            <div class="col-sm-2">
+              <a href="http://thepiratebay.se/">Pirate</a>
+              <br/>
+              <a href="https://kickass.to/">KAT</a>
+              <br/>
+              <a href="http://rutracker.org/forum/index.php">RU</a>
+              <br/>
+              <a href="http://dynasty-scans.com/">Dynasty</a>
+              <br/>
+            </div>
+            <div class="col-sm-2">
+              <a href="https://boards.4chan.org/u/">/u/</a>
+              <br/>
+              <a href="https://boards.4chan.org/mu/">/mu/</a>
+              <br/>
+              <a href="https://boards.4chan.org/vg/">/vg/</a>
+              <br/>
+              <a href="https://boards.4chan.org/wg/">/wg/</a>
+              <br/>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-2 columner">
-        <script src="https://redditjs.com/subreddit.js" data-subreddit="warframe" data-sort="top" data-timeframe="day" data-theme="dark" data-height="550"></script>
+    </div>
+    <div class="right-block">
+      <div id="news">
       </div>
     </div>
   </div>
