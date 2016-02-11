@@ -2,7 +2,13 @@ $(document).ready(function () {
   function startTime () {
     var today = new Date()
     $('#timer').html(today.toLocaleString())
-    var t = setTimeout(startTime, 500)
+    $('#quote').html(quotes[Math.floor(Math.random() * (quotes.length))].toString())
+    var t = setInterval(updateTime, 1000)
+  }
+
+  function updateTime () {
+    var today = new Date()
+    $('#timer').html(today.toLocaleString())
   }
 
   $('#lock').click(function () {
@@ -19,5 +25,13 @@ $(document).ready(function () {
     $('#unlock').addClass('hidden')
   })
 
+  var quotes = [
+    "Die hard, live harder",
+    "Degenerates, all of you",
+    "There's never a bus you have to chase after",
+    "All men are stupid. All women are crazy",
+    "There's plenty of time to sleep once you're dead",
+    "Life is just convincing people you deserve things you don't"
+  ]
   window.onload = startTime()
 })
