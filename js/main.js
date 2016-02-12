@@ -30,6 +30,7 @@ $(document).ready(function () {
     $('#nsfw').removeClass('hidden')
     $('#lock').addClass('hidden')
     $('#unlock').removeClass('hidden')
+    $('#quote').removeClass('hidden')
   })
 
   $('#unlock').click(function () {
@@ -37,6 +38,7 @@ $(document).ready(function () {
     $('#nsfw').addClass('hidden')
     $('#lock').removeClass('hidden')
     $('#unlock').addClass('hidden')
+    $('#quote').addClass('hidden')
   })
 
   var quotes = [
