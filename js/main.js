@@ -2,16 +2,22 @@ $(document).ready(function () {
   function startTime () {
     var today = new Date()
     $('#timer').html(today.toLocaleString())
-    getQuote()
+    window.i = Math.floor(Math.random() * (quotes.length))
+    getQuote(window.i)
     var t = setInterval(updateTime, 1000)
   }
 
-  $('#quote').click(function (){
-    getQuote()
+  $('#quote').click(function () {
+    if (i < quotes.length) {
+      i ++
+    } else {
+      i = 0
+    }
+    getQuote(i)
   })
 
-  function getQuote () {
-    $('#quote').html(quotes[Math.floor(Math.random() * (quotes.length))].toString())
+  function getQuote (index) {
+    $('#quote').html(quotes[index].toString())
   }
 
   function updateTime () {
