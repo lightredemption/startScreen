@@ -1,3 +1,3 @@
 # startScreen
 
-Deprecated, see https://lightredemption.github.io/dashboard/
+Deprecated, see https://github.com/lightredemption/dashboard
